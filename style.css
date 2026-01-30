@@ -323,11 +323,11 @@ body::before {
   .navbar {
     padding: 16px 20px;
     justify-content: center;
-    position: relative; /* Ensure container is relative for absolute children */
+    position: relative; 
   }
   
   .hero {
-    padding-top: 100px; /* Push hero content down to avoid overlap */
+    padding-top: 100px; 
   }
 
   .hamburger {
@@ -341,11 +341,11 @@ body::before {
   .nav-links {
     position: absolute;
     top: 100%;
-    right: 20px; /* Aligns to right */
-    left: auto; /* Overrides previous center/left */
-    transform: none; /* Removes centering transform */
+    right: 20px; 
+    left: auto; 
+    transform: none; 
     width: auto;
-    min-width: 200px; /* Reduced width */
+    min-width: 200px; 
     max-width: 250px;
 
     background: linear-gradient(
@@ -355,8 +355,8 @@ body::before {
     );
 
     backdrop-filter: blur(14px);
-    border-radius: 12px; /* Slightly smaller radius */
-    padding: 16px; /* Reduced padding */
+    border-radius: 12px; 
+    padding: 16px; 
 
     display: none;
     flex-direction: column;
@@ -535,12 +535,12 @@ body::before {
 
 @media (max-width: 480px) {
   .hero-text h2 {
-    font-size: 28px; /* Reduced from 36px to prevent clipping */
+    font-size: 28px;
     margin-top: 40px; /* Add space for header */
   }
 
   .mobile-typing {
-    font-size: 22px; /* Reduced from 28px */
+    font-size: 22px; 
     margin-bottom: 24px;
   }
 
@@ -553,12 +553,12 @@ body::before {
   }
   
   .hero {
-    padding: 100px 16px 20px 16px; /* Increased top padding to clear header */
+    padding: 100px 16px 20px 16px; 
     justify-content: flex-start; /* Align to top */
   }
   
   .logo {
-    font-size: 24px; /* Slightly reduced */
+    font-size: 24px; 
   }
 }
 
