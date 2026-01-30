@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mango Lassi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">
+        <span class="logo-mango">Mango</span>
+        <span class="logo-lassi">Lassi</span>
+      </h1>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-text">
+        <h2 class="typing">Fresh.Cream.Summer.</h2>
+        <h2 class="mobile-typing">
+          <span class="line1">Fresh.</span>
+          <span class="line2"> Cream.</span>
+          <span class="line3"> Summer.</span>
+        </h2>
+        <p>
+          Experience the perfect blend of ripe mangoes and creamy yogurt in
+          every sip!
+        </p>
+        <p class="subtitle">Sip the sunshine. Taste the summer.</p>
+        <button>Order Now</button>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/image.png" class="can can-1" alt="mango drink" />
+      </div>
+
+      <ul class="socials">
+        <li><a href="#">ⓕ</a></li>
+        <li><a href="#">𝕏</a></li>
+        <li><a href="#">🅾</a></li>
+        <li><a href="#">✉</a></li>
+      </ul>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", (e) => {
+        e.stopPropagation(); // click bubble na ho
+        navLinks.classList.toggle("show");
+      });
+
+      document.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+      });
+
+      navLinks.addEventListener("click", (e) => {
+        e.stopPropagation(); // menu ke andar click pe close na ho
+      });
+    </script>
+  </body>
+</html>
